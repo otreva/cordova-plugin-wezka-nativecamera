@@ -68,7 +68,7 @@ public class CameraActivity extends Activity implements SensorEventListener {
     private boolean pressed = false;
     private int degrees = 0;
     private boolean isFlash = false;
-    private boolean isFrontCamera = false;
+    private boolean isFrontCamera = true;
     SensorManager sm;
     WindowManager mWindowManager;
 
