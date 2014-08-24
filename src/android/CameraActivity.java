@@ -64,11 +64,11 @@ public class CameraActivity extends Activity implements SensorEventListener {
     private boolean inPreview = false;
     private boolean cameraConfigured = false;
     private int led = 0;
-    private int cam = 0;
+    private int cam = 1;
     private boolean pressed = false;
     private int degrees = 0;
     private boolean isFlash = false;
-    private boolean isFrontCamera = true;
+    private boolean isFrontCamera = false;
     SensorManager sm;
     WindowManager mWindowManager;
 
