@@ -110,15 +110,16 @@ public class CameraActivity extends Activity implements SensorEventListener {
         mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
 
         if(getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)){
-            flashButton.setVisibility(View.VISIBLE);
-            isFlash = true;
+            flashButton.setVisibility(View.INVISIBLE);
+            //isFlash = true;
+            isFlash = false;
         } else {
             flashButton.setVisibility(View.INVISIBLE);
             isFlash = false;
         }
 
         if(Camera.getNumberOfCameras() > 1){
-            flipCamera.setVisibility(View.VISIBLE);
+            flipCamera.setVisibility(View.INVISIBLE);
             isFrontCamera = true;
         } else {
             flipCamera.setVisibility(View.INVISIBLE);
